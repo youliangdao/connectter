@@ -11,7 +11,7 @@ module Connectter
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    config. generate do |g|
+    config. generators do |g|
       g.assets false
       g.skip_routes false
       g.test_framework false
