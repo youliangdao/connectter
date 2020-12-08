@@ -1,34 +1,51 @@
 <%= stylesheet_link_tag "custom", :media => "all" %>
 
-  <nav class="navbar navbar-expand-sm border-bottom sticky-top bg-white">
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top bg-white">
     <div id="head-logo">
       <%= link_to "", '/', class: "navbar-brand" %>
     </div>
-    <div id="menu" class="collapse navbar-collapse">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="menu" class="collapse navbar-collapse bg-white">
       <ul class="navbar-nav mr-auto">
       </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3"><a href="" class="nav-link font-weight-bold">ログイン</a></li>
-        <li class="nav-item mx-3"><a href="" class="nav-link font-weight-bold">新規登録</a></li>
+      <ul class="navbar-nav text-center">
+        <%# ユーザーがログインしていない時は以下を表示 %>
+        
         <li class="nav-item mx-3">
           <a href="" class="nav-link">
-            <%= icon('far', 'edit') %>
+            <i class="fas fa-sign-in-alt fa-lg"></i>
+            <span class="font-weight-bold">ログイン</span>
           </a>
         </li>
-        <li class="nav-item dropdown mr-5 ml-3">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <%= icon('fas', 'users-cog') %>
+        <li class="nav-item mx-3"><a href="" class="nav-link font-weight-bold">新規登録</a></li>
+        <%# ユーザーがログイン済みの時は以下を表示 %>
+
+        <%# <li class="nav-item mx-3">
+          <a href="" class="nav-link">
+            <i class="fas fa-edit fa-lg"></i>
+            <span class="font-weight-bold">手紙を書く</span>
           </a>
-          <div class="dropdown-menu dropdown-menu-right mt-0" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-body" href="#">プロフィール</a>
-            <a class="dropdown-item text-body" href="#">登録情報管理</a>
-            <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-body" href="#">ログアウト</a>
-          </div>
         </li>
+        <li class="nav-item mx-3">
+          <a href="" class="nav-link">
+            <i class="fas fa-user fa-lg"></i>
+            <span class="font-weight-bold">プロフィール</span>
+          </a>
+        </li>
+         <li class="nav-item mx-3">
+          <a href="" class="nav-link">
+            <i class="fas fa-users-cog fa-lg"></i>
+            <span class="font-weight-bold">登録情報管理</span>
+          </a>
+        </li>
+        <li class="nav-item mx-3">
+          <a href="" class="nav-link">
+            <i class="fas fa-sign-out-alt fa-lg"></i>
+            <span class="font-weight-bold">ログアウト</span>
+          </a>
+        </li> %>
       </ul>
     </div>
   </nav>
