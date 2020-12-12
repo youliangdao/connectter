@@ -31,7 +31,7 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
-require 'capybara/rspec' #追加 
+require 'capybara/rspec' # 追加
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f } # 追加
 

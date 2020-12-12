@@ -6,6 +6,7 @@ RSpec.describe "静的ページ", type: :system do
       before do
         visit root_path
       end
+
       it "「その気持ち伝えてみませんか？」の文字列が正しく存在することを確認" do
         expect(page).to have_content("その気持ち、伝えてみませんか")
       end
@@ -19,6 +20,7 @@ RSpec.describe "静的ページ", type: :system do
     before do
       visit page_path('terms')
     end
+
     it "利用規約の文字列が存在することを確認" do
       expect(page).to have_content("利用規約")
     end
@@ -31,6 +33,7 @@ RSpec.describe "静的ページ", type: :system do
     before do
       visit page_path('privacypolicy')
     end
+
     it "プライパシーポリシーの文字列が存在することを確認" do
       expect(page).to have_content("プライバシーポリシー")
     end
@@ -43,6 +46,7 @@ RSpec.describe "静的ページ", type: :system do
     before do
       visit page_path('about')
     end
+
     it "connectterとは？の文字列が存在することを確認する" do
       expect(page).to have_content("connectterとは？")
     end
