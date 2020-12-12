@@ -66,3 +66,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'high_voltage'
 gem 'devise'
+gem 'bootstrap' , '~> 4.1.1'
+gem 'jquery-rails'
+gem 'font-awesome-sass'
