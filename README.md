@@ -9,7 +9,6 @@
 | encrypted_password| string       | null: false                    |
 | birth_date        | date         | null: false                    |
 | introduction      | string       | null: false                    |
-| connectter_id     | integer      | null: false                    |
 
 **Association**
 
